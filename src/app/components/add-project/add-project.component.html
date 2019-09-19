@@ -186,7 +186,7 @@
 
            <tr *ngFor = "let project of projectsList | projectsearch:searchVal.value 
                   | orderBy:sortBy.value ; let i = index">
-
+                <td> {{ i+1 }}
                 <td> {{ project.project }} </td>
                 <td> {{ project.numberOfTasks }} </td>
                 <td> {{ project.priority }} </td>

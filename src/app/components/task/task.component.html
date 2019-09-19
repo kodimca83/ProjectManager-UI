@@ -43,6 +43,7 @@
     <tbody>
       <tr *ngFor="let task of taskList | orderBy:sortBy.value | 
       search:searchVal.value;let i=index ">
+        <td> {{ i+1 }}
         <td>{{task.taskName}}</td>
         <td>{{task.parentTaskName}}</td>
         <td>{{task.projectName}}</td>
